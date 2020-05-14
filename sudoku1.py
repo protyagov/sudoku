@@ -12,9 +12,6 @@ board = [["5", "3", ".", ".", "7", ".", ".", ".", "."],
          [".", ".", ".", "4", "1", "9", ".", ".", "5"],
          [".", ".", ".", ".", "8", ".", ".", "7", "9"]]
 
-import cProfile
-import pstats
-
 
 def print_board(board):
     for r in board:
@@ -84,11 +81,6 @@ class Solution:
 
 
 s = Solution()
-# print_board(board)
-# s.solveSudoku(board)
-# print_board(board)
-
-profile = cProfile.Profile()
-profile.runcall(s.solveSudoku, board)
-ps = pstats.Stats(profile)
-ps.print_stats()
+print_board(board)
+s.solveSudoku(board)
+print_board(board)

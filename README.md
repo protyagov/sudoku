@@ -12,6 +12,6 @@ Backtrack Algorithm to solve Sudoko game on 9x9 board.
 **Sudoku2.py** 
 This is extencion of the first solution. I have added *memoization* to reduce timing of step 2. We can only calculate available numbers for given empty cell once and then refer to it. Hence it is an example of *dynamic programming* because the occurences of the numbers are looked up.
 
-According to LeetCode second solution performs twice faster than first one, and overall 83% faster among 176,000 acceptable submitted solutions.
+According to LeetCode second solution performs 3x times faster than first one, and overall 83% faster among 176,000 acceptable submitted solutions.
 
 ![Image of Yaktocat](https://github.com/protyagov/sudoku/blob/master/leetcode.png)

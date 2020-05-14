@@ -1,8 +1,6 @@
 from typing import List
-import cProfile
-import pstats
 
-board3 = [["5", "3", ".", ".", "7", ".", ".", ".", "."],
+board = [["5", "3", ".", ".", "7", ".", ".", ".", "."],
          ["6", ".", ".", "1", "9", "5", ".", ".", "."],
          [".", "9", "8", ".", ".", ".", ".", "6", "."],
 
@@ -94,11 +92,6 @@ class Solution:
 
 
 s = Solution()
-# print_board(board)
-# s.solveSudoku(board3)
-# print_board(board3)
-
-profile = cProfile.Profile()
-profile.runcall(s.solveSudoku, board3)
-ps = pstats.Stats(profile)
-ps.print_stats()
+print_board(board)
+s.solveSudoku(board)
+print_board(board)
